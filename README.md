@@ -1,4 +1,5 @@
 # MatchedFiltedbasedLPR
-![image](https://github.com/user-attachments/assets/57f4cfb1-60b5-4a77-bb2f-01bafafff5bf)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/57f4cfb1-60b5-4a77-bb2f-01bafafff5bf" alt="image">
+</p>
 Place recognition is an important task within autonomous navigation, involving the re-identification of previously visited locations from an initial traverse. Unlike visual place recognition (VPR), LiDAR place recognition (LPR) is tolerant to changes in lighting, seasons, and textures, leading to high performance on benchmark datasets from structured urban environments. However, there is a growing need for methods that can operate in diverse environments with high performance and minimal training. In this paper, we propose a handcrafted matching strategy that performs roto-translation invariant place recognition and relative pose estimation for both urban and unstructured natural environments. Our approach constructs Birds Eye View (BEV) global descriptors and employs a two-stage search using matched filtering --- a signal processing technique for detecting known signals amidst noise. Extensive testing on the NCLT, Oxford Radar, and WildPlaces datasets consistently demonstrates state-of-the-art (SoTA) performance across place recognition and relative pose estimation metrics, with up to 15\% higher recall than previous SoTA.
