@@ -1,0 +1,234 @@
+{
+  "OxfordRadarOLd": {
+    "refNum": 1,
+    "queryNum": 2,
+    "increment": 20,
+    "details": {
+      "1": ["./data/OxfordRadarDataset/2019-01-10-11-46-21-radar-oxford-10k/velodyne_left", "./data/OxfordRadarDataset/2019-01-10-11-46-21-radar-oxford-10k/gps/ins.csv", 44414, 2220],
+      "2": ["./data/OxfordRadarDataset/2019-01-10-12-32-52-radar-oxford-10k/velodyne_left", "./data/OxfordRadarDataset/2019-01-10-12-32-52-radar-oxford-10k/gps/ins.csv", 43143, 2157],
+      "3": ["./data/OxfordRadarDataset/2019-01-10-14-02-34-radar-oxford-10k/velodyne_left", "./data/OxfordRadarDataset/2019-01-10-14-02-34-radar-oxford-10k/gps/ins.csv", 39766, 1988],
+      "4": ["./data/OxfordRadarDataset/2019-01-16-13-42-28-radar-oxford-10k/velodyne_left", "./data/OxfordRadarDataset/2019-01-16-13-42-28-radar-oxford-10k/gps/ins.csv", 38271, 1913],
+      "5": ["./data/OxfordRadarDataset/2019-01-18-15-20-12-radar-oxford-10k/velodyne_left", "./data/OxfordRadarDataset/2019-01-18-15-20-12-radar-oxford-10k/gps/ins.csv", 41510, 2075]
+    },
+    "parameters": {
+      "scanDimX": 150,
+      "scanDimY": 150,
+      "mapRes": 0.5,
+      "horizNumScans": 25,
+      "intensityFilter": 0,
+      "pointInterval": 5,
+      "zmin_max":[0, 0], 
+      "volx_threshold":1
+    }
+  },
+  "Mulran": {
+    "refNum": 1,
+    "queryNum": 2,
+    "increment": 5,
+    "details": {
+      "1": ["./data/MulRan/KAIST01/Ouster", "./data/MulRan/KAIST01/global_pose.csv", 8226],
+      "2": ["./data/MulRan/KAIST02/Ouster", "./data/MulRan/KAIST02/global_pose.csv", 8941]
+    },
+    "parameters": {
+      "scanDimX": 150,
+      "scanDimY": 150,
+      "mapRes": 0.5,
+      "horizNumScans": 25,
+      "intensityFilter": 0,
+      "pointInterval": 1,
+      "zmin_max":[0, 0], 
+      "volx_threshold":1
+    }
+  },
+  "NCLT": {
+    "refIncr": 1,
+    "queryIncr": 1,
+    "errTolerance":25,
+    "details":{
+      "1": ["/media/therese/Element/data/NCLT/2012-01-15/velodyne_sync", "/media/therese/Element/data/NCLT/groundtruth_2012-01-15.csv"],
+      "2": ["/media/therese/Element/data/NCLT/2012-02-04/velodyne_sync", "/media/therese/Element/data/NCLT/groundtruth_2012-02-04.csv"],
+      "3": ["/media/therese/Element/data/NCLT/2012-03-17/velodyne_sync", "/media/therese/Element/data/NCLT/groundtruth_2012-03-17.csv"],
+      "4": ["/media/therese/Element/data/NCLT/2012-05-26/velodyne_sync", "/media/therese/Element/data/NCLT/groundtruth_2012-05-26.csv"],
+      "5": ["/media/therese/Element/data/NCLT/2012-06-15/velodyne_sync", "/media/therese/Element/data/NCLT/groundtruth_2012-06-15.csv"],
+      "6": ["/media/therese/Element/data/NCLT/2012-08-20/velodyne_sync", "/media/therese/Element/data/NCLT/groundtruth_2012-08-20.csv"],
+      "7": ["/media/therese/Element/data/NCLT/2012-09-28/velodyne_sync", "/media/therese/Element/data/NCLT/groundtruth_2012-09-28.csv"],
+      "8": ["/media/therese/Element/data/NCLT/2012-10-28/velodyne_sync", "/media/therese/Element/data/NCLT/groundtruth_2012-10-28.csv"],
+      "9": ["/media/therese/Element/data/NCLT/2012-11-16/velodyne_sync", "/media/therese/Element/data/NCLT/groundtruth_2012-11-16.csv"],
+      "10": ["/media/therese/Element/data/NCLT/2013-02-23/velodyne_sync", "/media/therese/Element/data/NCLT/groundtruth_2013-02-23.csv"],
+      "11": ["/media/therese/Element/data/NCLT/2013-04-05/velodyne_sync", "/media/therese/Element/data/NCLT/groundtruth_2013-04-05.csv"]
+    },
+    "parameters": {
+      "scanDimX": 120,
+      "scanDimY": 120,
+      "mapRes": 0.75,
+      "refRadius":4,
+      "queryRadius": 10, 
+      "blkSize": 2,
+      "horizNumScans": 50,
+      "intensityFilter": 17,
+      "pointInterval": 1,
+      "zmin_max":[0, 0], 
+      "HDMThresh":1,
+      "dim_randDwnsmple": 10,
+      "nMultiplier_randDwnsmpl": 2,
+      "topN":2
+    }
+  },
+  "OxfordRadar": {
+    "refIncr": 1,
+    "queryIncr": 1,
+    "errTolerance": 25,
+    "details": {
+      "1": ["/media/therese/Element/data/OxfordRadar/2019-01-18-12-42-34-radar-oxford-10k/velodyne_left", "/media/therese/Element/data/OxfordRadar/2019-01-18-12-42-34-radar-oxford-10k/gps/ins.csv"],
+      "2": ["/media/therese/Element/data/OxfordRadar/2019-01-17-14-03-00-radar-oxford-10k/velodyne_left", "/media/therese/Element/data/OxfordRadar/2019-01-17-14-03-00-radar-oxford-10k/gps/ins.csv"],
+      "3": ["/media/therese/Element/data/OxfordRadar/2019-01-16-14-15-33-radar-oxford-10k/velodyne_left", "/media/therese/Element/data/OxfordRadar/2019-01-16-14-15-33-radar-oxford-10k/gps/ins.csv"],
+      "4": ["/media/therese/Element/data/OxfordRadar/2019-01-15-13-53-14-radar-oxford-10k/velodyne_left", "/media/therese/Element/data/OxfordRadar/2019-01-15-13-53-14-radar-oxford-10k/gps/ins.csv"],
+      "5": ["/media/therese/Element/data/OxfordRadar/2019-01-14-12-05-52-radar-oxford-10k/velodyne_left", "/media/therese/Element/data/OxfordRadar/2019-01-14-12-05-52-radar-oxford-10k/gps/ins.csv"],
+      "6": ["/media/therese/Element/data/OxfordRadar/2019-01-11-12-26-55-radar-oxford-10k/velodyne_left", "/media/therese/Element/data/OxfordRadar/2019-01-11-12-26-55-radar-oxford-10k/gps/ins.csv"],
+      "7": ["/media/therese/Element/data/OxfordRadar/2019-01-10-11-46-21-radar-oxford-10k/velodyne_left", "/media/therese/Element/data/OxfordRadar/2019-01-10-11-46-21-radar-oxford-10k/gps/ins.csv"]
+    },
+    "parameters": {
+      "scanDimX": 120,
+      "scanDimY": 120,
+      "mapRes": 1.3,
+      "refRadius": 4,
+      "blkSize": 2,
+      "queryRadius": 10, 
+      "horizNumScans": 25,
+      "intensityFilter": 0,
+      "pointInterval": 5,
+      "zmax":100, 
+      "HDMThresh":1,
+      "dim_randDwnsmple": 10,
+      "nMultiplier_randDwnsmpl": 2,
+      "topN":2
+    }
+  },
+  "WildPlaces_Venman": {
+    "refIncr": 1,
+    "queryIncr": 10,
+    "evalInfoFile":"/home/therese/Documents/Wild-Places-main/Venman_evaluation_query2.pickle",
+    "trainFile": "/home/therese/Documents/Wild-Places-main/scripts/training_wild-places.pickle" ,
+    "errTolerance": 3,
+    "details": {
+      "1": ["/media/therese/Element/data/WildPlaces/data/Venman/V-01/Clouds", "/media/therese/Element/data/WildPlaces/data/Venman/V-01/poses_aligned.csv"],
+      "2": ["/media/therese/Element/data/WildPlaces/data/Venman/V-02/Clouds", "/media/therese/Element/data/WildPlaces/data/Venman/V-02/poses_aligned.csv"],
+      "3": ["/media/therese/Element/data/WildPlaces/data/Venman/V-03/Clouds", "/media/therese/Element/data/WildPlaces/data/Venman/V-03/poses_aligned.csv"],
+      "4": ["/media/therese/Element/data/WildPlaces/data/Venman/V-04/Clouds", "/media/therese/Element/data/WildPlaces/data/Venman/V-04/poses_aligned.csv"]
+    },
+    "parameters": {
+      "scanDimX": 120,
+      "scanDimY": 120,
+      "mapRes": 0.3,
+      "refRadius": 2,
+      "blkSize": 2,
+      "rotIncr":10,
+      "horizNumScans": 50,
+      "intensityFilter": 0,
+      "pointInterval": 1,
+      "zmax":3, 
+      "HDMThresh":2,
+      "dim_randDwnsmple": 10,
+      "nMultiplier_randDwnsmpl": 2,
+      "topN":2,
+      "unoccWeight":-0.15,
+      "downsampleType": "random"
+    }
+  },
+  "WildPlaces_Karawatha": {
+    "refIncr": 1,
+    "queryIncr": 10,
+    "evalInfoFile":"/home/therese/Documents/Wild-Places-main/Karawatha_evaluation_query2.pickle",
+    "errTolerance": 3,
+    "details": {
+      "1": ["/media/therese/Element/data/WildPlaces/data/Karawatha/K-01/Clouds", "/media/therese/Element/data/WildPlaces/data/Karawatha/K-01/poses_aligned.csv"],
+      "2": ["/media/therese/Element/data/WildPlaces/data/Karawatha/K-02/Clouds", "/media/therese/Element/data/WildPlaces/data/Karawatha/K-02/poses_aligned.csv"],
+      "3": ["/media/therese/Element/data/WildPlaces/data/Karawatha/K-03/Clouds", "/media/therese/Element/data/WildPlaces/data/Karawatha/K-03/poses_aligned.csv"],
+      "4": ["/media/therese/Element/data/WildPlaces/data/Karawatha/K-04/Clouds", "/media/therese/Element/data/WildPlaces/data/Karawatha/K-04/poses_aligned.csv"]
+    },
+    "parameters": {
+      "scanDimX": 120,
+      "scanDimY": 120,
+      "mapRes": 0.3,
+      "refRadius": 2,
+      "blkSize": 2,
+      "rotIncr":10,
+      "horizNumScans": 50,
+      "intensityFilter": 0,
+      "pointInterval": 1,
+      "zmax":3, 
+      "HDMThresh":2,
+      "dim_randDwnsmple": 10,
+      "nMultiplier_randDwnsmpl": 2,
+      "topN":2,
+      "unoccWeight":-0.15
+    }
+  },
+  "WildPlaces_Venman_HPC": {
+    "refIncr": 2,
+    "queryIncr": 1,
+    "evalInfoFile":"../data/Venman/Venman_evaluation_query2.pickle",
+    "details": {
+      "1": ["../data/Venman/V-01/Clouds", "../data/Venman/V-01/poses_aligned.csv"],
+      "2": ["../data/Venman/V-02/Clouds", "../data/Venman/V-02/poses_aligned.csv"],
+      "3": ["../data/Venman/V-03/Clouds", "../data/Venman/V-03/poses_aligned.csv"],
+      "4": ["../data/Venman/V-04/Clouds", "../data/Venman/V-04/poses_aligned.csv"]
+    },
+    "parameters": {
+      "scanDimX": 80,
+      "scanDimY": 80,
+      "mapRes": 0.5,
+      "horizNumScans": 50,
+      "intensityFilter": 0,
+      "pointInterval": 1,
+      "zmin_max":[0, 3], 
+      "voxl_threshold":0.05
+    }
+  },
+  "WildPlaces_Karawatha_HPC": {
+    "refIncr": 2,
+    "queryIncr": 1,
+    "evalInfoFile":"../data/Karawatha/Karawatha_evaluation_query2.pickle",
+    "details": {
+      "1": ["../data/Karawatha/K-01/Clouds", "../data/Karawatha/K-01/poses_aligned.csv"],
+      "2": ["../data/Karawatha/K-02/Clouds", "../data/Karawatha/K-02/poses_aligned.csv"],
+      "3": ["../data/Karawatha/K-03/Clouds", "../data/Karawatha/K-03/poses_aligned.csv"],
+      "4": ["../data/Karawatha/K-04/Clouds", "../data/Karawatha/K-04/poses_aligned.csv"]
+    },
+    "parameters": {
+      "scanDimX": 80,
+      "scanDimY": 80,
+      "mapRes": 0.5,
+      "horizNumScans": 50,
+      "intensityFilter": 0,
+      "pointInterval": 1,
+      "zmin_max":[0, 3], 
+      "volx_threshold":0.3
+    }
+  },
+  "Jackal": {
+    "refNum": 1,
+    "queryNum": 2,
+    "increment": 5,
+    "details": { 
+      "1": ["./data/JackalDataset/run5_ccw.bag", 2628],
+      "2": ["./data/JackalDataset/run10_ccw.bag", 2459],
+      "3": ["./data/JackalDataset/s5_ccw_1.bag", 1688, 4538],
+      "4": ["./data/JackalDataset/s6_ccw_1.bag", 1640, 4408],
+      "6": ["./data/JackalDataset/sim_cw_3.bag", 1058],
+      "7": ["./data/JackalDataset/sim_cw_5.bag", 1498],
+      "8": ["./data/JackalDataset/run4_new.bag", 3690],
+      "9": ["./data/JackalDataset/run3_new.bag", 4074]
+    },
+    "parameters": {
+      "scanDimX": 302,
+      "scanDimY": 302,
+      "mapRes": 0.05,
+      "horizNumScans": 20,
+      "intensityFilter": 0,
+      "pointInterval": 1,
+      "zmin_max":[0, 0], 
+      "volx_threshold":0.1
+    }
+  }
+}
