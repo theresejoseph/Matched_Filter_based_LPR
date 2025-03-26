@@ -256,6 +256,7 @@ def extractResultNCLT(refNum,queryNum,mapRes=1, scanDimX=120, refIncr=1, queryIn
     
     return extractSingleReuslt(savePath, errTolerance=errToler)
 
+
 def recallNCLT():
     totRecall,count=0,0
     for i in [10,11]:
@@ -264,9 +265,9 @@ def recallNCLT():
             count+=1  
             output=extractResultNCLT(i,j, refRad=4, queryRad=10, mapRes=0.75)
             recall=output['recall']
-            print(f'   ref:{i}, query:{j}, recall:{recall}   '  )
+            print(f'    ref:{i}, query:{j}, recall:{recall}   '  )
             totRecall+=output['recall']
-    print(f'average recall: {totRecall/count}')  
+    print(f'NCLT average recall: {totRecall/count}')  
 
 def recallOxfordRadar():
     totRecall,count=0,0
@@ -289,11 +290,12 @@ def recallOxfordRadar():
             nMultiplier_randDwnsmpl=2
             results_dir=f'./results/LPR_{datasetName}/EvaluateTestSet'
             results_filename=f'/{datasetName}_R:{i}_Q:{j}_RInc:{refIncr}_Rrad:{refRad}_QInc:{queryIncr}_Qrad:{queryRad}_Res:{mapRes}_Dim:{scanDimX}_blkAvg:{blockSize}_N2ndsearch:{NumMatches}_background:{background}.xlsx'
-            refGridFilename=refNpyName=f"/refGrid_dim{scanDimX}_mapRes{mapRes}_refIncr{refIncr}_refRad{refRad}_rThresh{refThresh}_patchDim{dim_randDwnsmple}_nptsMult{nMultiplier_randDwnsmpl}.npy"
+            refNpyName=f"/refGrid_dim{scanDimX}_mapRes{mapRes}_refIncr{refIncr}_refRad{refRad}_rThresh{refThresh}_patchDim{dim_randDwnsmple}_nptsMult{nMultiplier_randDwnsmpl}.npy"
             output= extractSingleReuslt(results_dir+results_filename, errTolerance=25)
-            print(results_filename, output['recall'])
+            print(f'    ref:{i}, query:{j}, recall:', output['recall'])
             totRecall+=output['recall']
-    print(f'average recall: {totRecall/count}')  
+    print(f'OxfordRadar average recall: {totRecall/count}')  
+
 
 def recallWildplaces():
     for envName in ['Karawatha', 'Venman']:
@@ -316,9 +318,10 @@ def recallWildplaces():
                     results_filename=f'/{envName}_R:{i}_Q:{j}_RInc:{refIncr}_Rrad:{refRad}_QInc:{queryIncr}_Res:{mapRes}_Dim:{scanDimX}_blkAvg:{blockSize}_N2ndsearch:{NumMatches}_nptsMult{numPtsMultiplier}_background{background}.xlsx'
                     
                     output= extractSingleReuslt(results_dir+results_filename, errTolerance=3)
-                    print(output['recall'])
+                    print(f'    ref:{i}, query:{j}, recall:', output['recall'])
                     totRecall+=output['recall']
-        print(f'average recall: {totRecall/count}')  
+        print(f'Wildplaces {envName} average recall: {totRecall/count}')  
+
 
 def ablationResultsPlot():
     top_n_recall = []
