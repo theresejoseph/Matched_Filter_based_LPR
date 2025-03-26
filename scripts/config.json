@@ -107,8 +107,8 @@
   "WildPlaces_Venman": {
     "refIncr": 1,
     "queryIncr": 10,
-    "evalInfoFile":"/home/therese/Documents/Wild-Places-main/Venman_evaluation_query2.pickle",
-    "trainFile": "/home/therese/Documents/Wild-Places-main/scripts/training_wild-places.pickle" ,
+    "evalInfoFile":"./data_processed_files/Venman_evaluation_query2.pickle",
+    "trainFile": "./data_processed_files/training_wild-places.pickle" ,
     "errTolerance": 3,
     "details": {
       "1": ["/media/therese/Element/data/WildPlaces/data/Venman/V-01/Clouds", "/media/therese/Element/data/WildPlaces/data/Venman/V-01/poses_aligned.csv"],
@@ -138,7 +138,7 @@
   "WildPlaces_Karawatha": {
     "refIncr": 1,
     "queryIncr": 10,
-    "evalInfoFile":"/home/therese/Documents/Wild-Places-main/Karawatha_evaluation_query2.pickle",
+    "evalInfoFile":"./data_processed_files/Karawatha_evaluation_query2.pickle",
     "errTolerance": 3,
     "details": {
       "1": ["/media/therese/Element/data/WildPlaces/data/Karawatha/K-01/Clouds", "/media/therese/Element/data/WildPlaces/data/Karawatha/K-01/poses_aligned.csv"],
